@@ -58,6 +58,12 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+  removeTransition(e) -> {
+    if (e.propertyName !== 'transform') return
+    e.target.classList.remove('playing')
+  }
+
+
 
 </script>
 
